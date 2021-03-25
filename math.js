@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', () =>
     const awnser = document.getElementById('awsome');
     const resultat = document.getElementById('resultat');
     const text1 = document.getElementById('text1');
+    let streak = 0;
+    let streaktext = document.getElementById('streak');
+
+    streaktext.innerHTML = "streak: " + streak
 
     btn1.addEventListener('click', start1);
 
@@ -56,9 +60,13 @@ document.addEventListener('DOMContentLoaded', () =>
             checkforrules();
             text1.innerHTML = a + " / " + b + " =";
             awnser.value = "";
+            streak++;
+            streaktext.innerHTML = "streak: " + streak;
         } else
         {
             resultat.innerHTML = 'resultat: <i class="fas fa-times fa-lg"></i>';
+            streak = 0;
+            streaktext.innerHTML = "streak: " + streak;
         }
     }
 })

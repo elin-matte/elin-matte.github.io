@@ -142,3 +142,38 @@ body
 {
     color: #e33434;
 }
+
+.fa-firefox
+{
+    color: #f2aa52;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background: #ffc2fb;
+    box-shadow:  3px 3px 11px #e0abdd,
+                 -3px -3px 11px #ffd9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.streak
+{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.containerstreak
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 75%;
+    align-items: center;
+    justify-content: center;
+}
