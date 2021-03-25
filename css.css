@@ -1,0 +1,144 @@
+.miniquiz
+{
+    font-size: 100px;
+    width: 100%;
+    margin-bottom: none;
+    font-family: sans-serif;
+}
+
+.miniquiz-text
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+#frame001
+{
+    border-radius: 50px;
+    background: #d145c8;
+    box-shadow:  20px 20px 60px #b23baa,
+                 -20px -20px 60px #f04fe6;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.title
+{
+    text-align: center;
+    color: #F1F3F4;
+    font-family: sans-serif;
+    font-size: 200%;
+}
+
+body
+{
+    background-color: #d145c8;
+}
+
+#btn1
+{
+    border: none;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F1F3F4;
+    width: 50px;
+}
+
+#btn1:hover
+{
+    cursor: pointer;
+}
+
+#text1
+{
+    text-align: center;
+    color: #F1F3F4;
+    font-family: sans-serif;
+}
+
+.input
+{
+    margin-top: 10px;
+    background: #F1F3F4;
+    border: none;
+    padding: 3px;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.fa-play
+{
+    color: black;
+}
+
+.fa-check-circle
+{
+    color: #67db5c;
+}
+
+.btn2
+{
+    border: none;
+    height: 50px;
+    border-radius: 50%;
+    background: #F1F3F4;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.btn2:active
+{
+    background-color: #e3e3e3;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.resultat
+{
+    margin-top: 10px;
+    background: #F1F3F4;
+    border: none;
+    padding: 3px;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    font-size: small;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultattext
+{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.fa-hourglass-half
+{
+    color: #b7ba61;
+}
+
+.fa-times
+{
+    color: #e33434;
+}
