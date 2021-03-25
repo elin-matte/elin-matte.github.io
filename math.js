@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () =>
     const text1 = document.getElementById('text1');
     let streak = 0;
     let streaktext = document.getElementById('streak');
+    var seconds = 0;
+    const timer = document.getElementById('timer')
+    let hasstarted = false;
 
     streaktext.innerHTML = "streak: " + streak
 
@@ -42,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () =>
     {
         gone1.innerHTML = "";
         text1.innerHTML = a + " <span>&#247</span> " + b + " =";
+        hasstarted = true;
     }
 
     btn2.addEventListener('click', awnserYes);
@@ -62,6 +66,8 @@ document.addEventListener('DOMContentLoaded', () =>
             awnser.value = "";
             streak++;
             streaktext.innerHTML = "streak: " + streak;
+            seconds = 0;
+            timer.innerHTML = ('tid: ' + seconds);
         } else
         {
             resultat.innerHTML = 'resultat: <i class="fas fa-times fa-lg"></i>';
@@ -69,4 +75,15 @@ document.addEventListener('DOMContentLoaded', () =>
             streaktext.innerHTML = "streak: " + streak;
         }
     }
+
+    function count()
+    {
+        if(hasstarted)
+        {
+            seconds+=1;
+            timer.innerHTML = ('tid: ' + seconds);
+        } else return
+    }
+
+    setInterval(count, 1000);
 })
