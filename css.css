@@ -17,9 +17,9 @@
 #frame001
 {
     border-radius: 50px;
-    background: #ffc2fb;
-    box-shadow:  20px 20px 60px #d9a5d5,
-                 -20px -20px 60px #ffdfff;
+    background: linear-gradient(145deg, #e6afe2, #ffd0ff);
+    box-shadow:  20px 20px 60px #dea9da,
+                 -20px -20px 60px #ffdbff;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -162,9 +162,10 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 75%;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .firefoxcontainer
@@ -172,11 +173,9 @@ body
     width: 30px;
     height: 30px;
     border-radius: 3px;
-    border-radius: 3px;
-    border-radius: 3px;
     background: #ffc2fb;
-    box-shadow:  3px 3px 11px #e0abdd,
-                 -3px -3px 11px #ffd9ff;
+    box-shadow:  3px 3px 7px #ebb2e7,
+                 -3px -3px 7px #ffd2ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,8 +187,8 @@ body
     height: 30px;
     border-radius: 3px;
     background: #ffc2fb;
-    box-shadow:  3px 3px 11px #e0abdd,
-                 -3px -3px 11px #ffd9ff;
+    box-shadow:  3px 3px 7px #ebb2e7,
+                 -3px -3px 7px #ffd2ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,14 +199,155 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 39.8%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    position: absolute;
 }
 
 .fa-clock
 {
     color: #cedbf2;
+}
+
+.turcontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.turcontainer2
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: #ffc2fb;
+    box-shadow:  3px 3px 7px #ebb2e7,
+                 -3px -3px 7px #ffd2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-ellipsis-h
+{
+    color: white;
+}
+
+#bottom
+{
+    position: fixed;
+    bottom: 0;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    left: 0;
+    font-size: 50px;
+}
+
+#bottom-text
+{
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.notes
+{
+    position: fixed;
+    bottom: 0;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    right: 0;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.fa-github
+{
+    padding-right: 5px;
+}
+
+.fa-creative-commons
+{
+    padding-right: 5px;
+}
+
+.wrapper
+{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    border-radius: 50px;
+    background: #ffc2fb;
+    box-shadow: inset 20px 20px 100px #e3addf,
+                inset -20px -20px 100px #ffd7ff;
+    width: 200px;
+    height: 150px;
+    padding: 25px 25px 30px 25px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.cookiesheader
+{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.buttons button
+{
+    border: 1px solid transparent;
+    background-color: #e3ca86;
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+}
+
+.buttons button:hover
+{
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}
+
+.highscorecontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.highscorecontainer2
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background: #ffc2fb;
+    box-shadow:  3px 3px 7px #ebb2e7,
+                 -3px -3px 7px #ffd2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-trophy
+{
+    color: #f5c136;
 }
