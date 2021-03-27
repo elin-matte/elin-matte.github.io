@@ -36,6 +36,16 @@ document.addEventListener('DOMContentLoaded', () =>
     var seconds = 0;
     const timer = document.getElementById('timer')
     let hasstarted = false;
+    const turer = document.getElementById('turer');
+    var turercount = 0;
+    let highscore = document.getElementById('highscore');
+
+    if(!localStorage.getItem('streak'))
+    {
+        localStorage.setItem('streak', 0);
+    }
+
+    highscore.innerHTML = 'rekord: ' + localStorage.getItem('streak');
 
     streaktext.innerHTML = "streak: " + streak
 
@@ -46,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () =>
         gone1.innerHTML = "";
         text1.innerHTML = a + " <span>&#247</span> " + b + " =";
         hasstarted = true;
+        turercount++;
+        turer.innerHTML = "turer: " + turercount;
     }
 
     btn2.addEventListener('click', awnserYes);
@@ -68,6 +80,13 @@ document.addEventListener('DOMContentLoaded', () =>
             streaktext.innerHTML = "streak: " + streak;
             seconds = 0;
             timer.innerHTML = ('tid: ' + seconds);
+            turercount++;
+            turer.innerHTML = "turer: " + turercount;
+            if(streak > localStorage.getItem('streak'))
+            {
+                console.log(localStorage.setItem('streak', streak));
+                highscore.innerHTML = 'rekord: ' + localStorage.getItem('streak');
+            }
         } else
         {
             resultat.innerHTML = 'resultat: <i class="fas fa-times fa-lg"></i>';
@@ -86,4 +105,31 @@ document.addEventListener('DOMContentLoaded', () =>
     }
 
     setInterval(count, 1000);
+
+    const cookieBox = document.getElementById('wrapper');
+    const acceptButton = document.getElementById('buttons');
+
+    acceptButton.addEventListener('click', cookies);
+    
+    function cookies()
+    {
+        document.cookie = "miniquiz=NoelNim";
+        if(document.cookie)
+        {
+            cookieBox.classList.add('hide');
+        } else
+        {
+            alert('cookie not there ):');
+        }
+    }
+
+    checkCookies();
+
+    function checkCookies()
+    {
+        if(document.cookie)
+        {
+            cookieBox.classList.add('hide');
+        }
+    }
 })
